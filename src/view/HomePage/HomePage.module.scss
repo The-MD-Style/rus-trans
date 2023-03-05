@@ -1,0 +1,140 @@
+.main-section{
+    height: 100vh;
+    // max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+        .header{
+            max-height: 100vh;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right 25% bottom 25%;
+            background-image: url('../../assets/images/bg.jpg');
+
+            .overflow{
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    width: 100%;
+                    max-height: 100vh;
+                    height: 100%;
+
+                .color{
+                    position: absolute;
+                    width: 100%;
+                    max-height: 100vh;
+                    height: 100%;
+                    // opacity: 0.2;
+                    background-color: rgba(23, 54,92, 0.7);
+                }
+                
+                .info{
+                    max-width: 1280px;
+                    padding: 70px 30px 20px 30px;
+                    font-family: sans-serif;
+                    max-height: 100vh;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    .name-number{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        @media screen and (max-width:800px) {
+                            margin-top: 50px;
+                            flex-direction: column-reverse;
+                            align-items: center;
+                            gap:40px;
+                            text-align: center;
+
+                        }
+                        .name{
+                            .head-name{
+                                font-weight: bold;
+                                font-size: 30px;
+                                line-height: normal;
+                                text-transform: uppercase;
+                                color:rgb(245, 166, 35)
+                            }
+                            .sub-name{
+                                font-size: 18px;
+                                line-height: normal;
+                                color: white;
+                            }
+                        }
+                        .number{
+                            .name{
+                                font-weight: bold;
+                                font-size: 30px;
+                                line-height: normal;
+                                text-transform: uppercase;
+                                color:rgb(245, 166, 35)
+                            }
+                            .number{
+                                font-size: 18px;
+                                line-height: normal;
+                                color: white;
+                            }
+                        }
+                    }
+                    .button-text{
+                        text-align: center;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        .link{
+                            text-decoration: none;
+                            button{
+                                cursor: pointer;
+                                background: rgb(245, 166, 35);
+                                border:4px solid rgb(245, 166, 35);
+                                color:white;
+                                min-width: 187px;
+                                min-height: 30px;
+                                padding: 26px 40px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 50px;
+                                transition: 0.5s;
+                                font-weight: bold;
+                                font-size: 20px;
+                                line-height: normal;
+                                text-transform: uppercase;
+                            &:hover{
+                                background: transparent;
+                                color:rgb(245, 166, 35);
+                            }
+                            }
+                        }
+
+                        .header-text{
+                            font-size: 50px;
+                            line-height: normal;
+                            text-transform: uppercase;
+                            color: white;
+                            font-weight: 500;
+                            @media screen and (max-width:770px) {
+                                font-size: 35px;
+                            }
+                        }
+                        .sub-text{
+                            color: white;
+                            font-size: 40px;
+                            line-height: normal;
+                            text-transform: uppercase;
+                            font-weight: 200;
+                            margin-bottom: 20px;
+                            @media screen and (max-width:770px) {
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+}
