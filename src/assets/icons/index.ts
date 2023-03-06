@@ -1,7 +1,7 @@
-import {  location, telegram, viber, whatsapp } from './custom';
+import { telegram, upArrow, viber, whatsapp } from './custom';
 
 const icons = {
-  location,
+  upArrow,
   viber,
   telegram,
   whatsapp
