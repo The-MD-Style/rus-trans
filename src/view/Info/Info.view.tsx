@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import classes from "./Info.module.scss";
 import Header from "@/components/Header/Header";
 import { ograniceno, tarife, zapretList, zapretListBox } from "./Info.map";
@@ -30,20 +30,6 @@ const InfoView = (props: Props) => {
       id: "ograniceno",
     },
   ];
-  const handleClickScroll = (item: string) => {
-    const element = document.getElementById(item);
-
-    if (element) {
-      const elementRect = element.getBoundingClientRect();
-      const absoluteElementTop = elementRect.top - 50;
-
-      window.scrollTo({
-        left: 0,
-        top: absoluteElementTop,
-        behavior: "smooth",
-      });
-    }
-  };
 
   const [visible, setVisible] = useState(false);
 
@@ -56,6 +42,35 @@ const InfoView = (props: Props) => {
     }
   };
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", toggleVisible);
+    }
+
+    return () => {
+      if (typeof window !== "undefined") {
+        window.removeEventListener("scroll", toggleVisible);
+      }
+    };
+  });
+
+  const handleClickScroll = (item: string) => {
+    const element = document.getElementById(item);
+
+    if (element) {
+      const elementRect = element.getBoundingClientRect();
+      const absoluteElementTop = elementRect.top - 50;
+
+      if (typeof window !== "undefined") {
+        window.scrollTo({
+          left: 0,
+          top: absoluteElementTop,
+          behavior: "smooth",
+        });
+      }
+    }
+  };
+
   const scrollToTop = () => {
     if (typeof window !== "undefined") {
       window.scrollTo({
@@ -64,8 +79,6 @@ const InfoView = (props: Props) => {
       });
     }
   };
-  if (typeof window !== "undefined")
-    window.addEventListener("scroll", toggleVisible);
 
   return (
     <section className={classes["info"]}>
