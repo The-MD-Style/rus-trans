@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import classes from "./HomePage.module.scss";
@@ -16,9 +18,16 @@ const HomePageView = (props: Props) => {
             <div className={classes["name-number"]}>
               <div className={classes["name"]}>
                 <p className={classes["head-name"]}>Rus-Trans</p>
-                <p className={classes["sub-name"]}>Грузо-Пассажирские Перевозки</p>
-                <p className={classes["sub-name-text"]}>Франция - Россия <br /> ( Париж, Ницца, Канны, Монако, Монте Карло )</p>
-                <p className={classes["sub-name-text"]}>Италия - Россия <br />( Сан Ремо, Милан, Рим )</p>
+                <p className={classes["sub-name"]}>
+                  Грузо-Пассажирские Перевозки
+                </p>
+                <p className={classes["sub-name-text"]}>
+                  Франция - Россия <br /> ( Париж, Ницца, Канны, Монако, Монте
+                  Карло )
+                </p>
+                <p className={classes["sub-name-text"]}>
+                  Италия - Россия <br />( Сан Ремо, Милан, Рим )
+                </p>
               </div>
               <div className={classes["number"]}>
                 <p className={classes["name"]}>Руслан Коман</p>

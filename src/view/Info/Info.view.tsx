@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
 import classes from "./Info.module.scss";
 import Header from "@/components/Header/Header";

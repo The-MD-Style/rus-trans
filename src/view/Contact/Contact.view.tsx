@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import classes from "./Contact.module.scss";
 import Header from "@/components/Header/Header";
