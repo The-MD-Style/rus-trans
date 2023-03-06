@@ -1,9 +1,6 @@
 "use client";
-
 import React from "react";
-import Image from "next/image";
 import classes from "./HomePage.module.scss";
-import photo from "@/assets/images/sprinters.jpg";
 import Link from "next/link";
 
 type Props = {};
@@ -22,11 +19,11 @@ const HomePageView = (props: Props) => {
                   Грузо-Пассажирские Перевозки
                 </p>
                 <p className={classes["sub-name-text"]}>
-                  Франция - Россия <br /> ( Париж, Ницца, Канны, Монако, Монте
-                  Карло )
+                  Франция - Россия(Москва) <br /> ( Париж, Ницца, Канны, Монако,
+                  Монте Карло )
                 </p>
                 <p className={classes["sub-name-text"]}>
-                  Италия - Россия <br />( Сан Ремо, Милан, Рим )
+                  Италия - Россия(Москва) <br />( Сан Ремо, Милан, Рим )
                 </p>
               </div>
               <div className={classes["number"]}>
