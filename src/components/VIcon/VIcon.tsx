@@ -26,6 +26,5 @@ const VIcon: React.FC<Props> = (props: React.PropsWithChildren<Props>) => {
 };
 
 VIcon.displayName = "VIcon";
-VIcon.defaultProps = {};
 
 export default VIcon;

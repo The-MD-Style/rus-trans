@@ -31,6 +31,5 @@ const VIconView: React.FC<Props> = (props: React.PropsWithChildren<Props>) => {
 };
 
 VIconView.displayName = "VIconView";
-VIconView.defaultProps = {};
 
 export default VIconView;

@@ -1,7 +1,4 @@
 import React from "react";
-
-import SectionContainer from "@/containers/SectionContainer/SectionContainer";
-
 import classes from "./Contact.module.scss";
 import Header from "@/components/Header/Header";
 import Link from "next/link";
@@ -42,8 +39,8 @@ const ContactView = (props: Props) => {
             <p className={classes["social-head"]}>Меня можно найти в:</p>
             <ul>
               {contacts.map((item) => (
-                <li key={item.link}>
-                  <Link href={""}>
+                <li key={`${item.link} + contact page`}>
+                  <Link href={item.link}>
                     <VIcon
                       color={item.color}
                       name={item.icon}

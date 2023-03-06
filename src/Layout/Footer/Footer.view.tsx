@@ -22,7 +22,7 @@ const FooterView = (props: Props) => {
           <ul>
             {contacts.map((item) => (
               <li key={item.link + 'footer'}>
-                <Link href={""}>
+                <Link href={item.link}>
                   <VIcon
                     color={item.color}
                     name={item.icon}
