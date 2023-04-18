@@ -20,6 +20,7 @@ const ContactView = (props: Props) => {
             <div className={classes["contacts"]}>
               <p className={classes["name"]}>[Имя] Руслан Коман</p>
               <p className={classes["number"]}>[Франция] +33 7 53 03 35 35</p>
+              <p className={classes["number"]}>[Россия] +79 1 69 99 84 27</p>
               <p className={classes["mail"]}>rustrans@gmail.com</p>
             </div>
             <p className={classes["page-name"]}>Реквизиты:</p>

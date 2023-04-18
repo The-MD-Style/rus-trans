@@ -29,6 +29,7 @@ const HomePageView = (props: Props) => {
               <div className={classes["number"]}>
                 <p className={classes["name"]}>Руслан Коман</p>
                 <p className={classes["number"]}>[Франция] +33 7 53 03 35 35</p>
+                <p className={classes["number"]}>[Россия] +79 1 69 99 84 27</p>
               </div>
             </div>
             <div className={classes["button-text"]}>
