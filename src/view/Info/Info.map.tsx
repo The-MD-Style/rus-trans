@@ -1,4 +1,43 @@
-export const tarife = [
+import GruzSection from "./Sections/GruzSection/GruzSection";
+import OgranicenoSection from "./Sections/OgranicenoSection/OgranicenoSection";
+import PosilcaSection from "./Sections/PosilcaSection/PosilcaSection";
+import TarifeSection from "./Sections/TarifeSection/TarifeSection";
+import ZapretSection from "./Sections/ZapretSection/ZapretSection";
+
+type SectionsDataType = {
+  text: JSX.Element;
+  ignore?: boolean;
+};
+
+type InfoSectionsType = {
+  sectionName: string;
+  section: () => JSX.Element;
+};
+
+export const InfoSections: InfoSectionsType[] = [
+  {
+    sectionName: "gruz",
+    section: () => <GruzSection></GruzSection>,
+  },
+  {
+    sectionName: "posilca",
+    section: () => <PosilcaSection></PosilcaSection>,
+  },
+  {
+    sectionName: "tarife",
+    section: () => <TarifeSection></TarifeSection>,
+  },
+  {
+    sectionName: "zapret",
+    section: () => <ZapretSection></ZapretSection>,
+  },
+  {
+    sectionName: "ograniceno",
+    section: () => <OgranicenoSection></OgranicenoSection>,
+  },
+];
+
+export const tarife: SectionsDataType[] = [
   {
     text: (
       <p>
@@ -26,7 +65,7 @@ export const tarife = [
   },
 ];
 
-export const zapretListBox = [
+export const zapretListBox: SectionsDataType[] = [
   {
     text: (
       <p>
@@ -77,7 +116,7 @@ export const zapretListBox = [
   },
 ];
 
-export const zapretList = [
+export const zapretList: SectionsDataType[] = [
   {
     text: (
       <p>
@@ -177,7 +216,7 @@ export const zapretList = [
   },
 ];
 
-export const ograniceno = [
+export const ograniceno: SectionsDataType[] = [
   {
     text: (
       <p>
