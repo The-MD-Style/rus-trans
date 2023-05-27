@@ -93,7 +93,7 @@ const InfoView = (props: Props) => {
             </span>
           </p>
           <ul className={classes["info-menu"]}>
-            {menu.map((item) => (
+            {menu.map((item, index: number) => (
               <li
                 key={item.id}
                 className={`${
