@@ -114,18 +114,19 @@
             }
 
             .box{
-                margin: 15px 0 35px 0;
-                border: 1px solid black;
-                padding: 3px 5px;
+              margin: 15px 0 35px 0;
+              border: 1px solid black;
+              padding: 3px 5px;
 
-                .box-head{
+              .box-head{
                 font-weight: 600;
                 font-size: 15px;
+                text-align: center;
 
                 strong{
-                    font-weight: 600;
-                    font-size: 15px;
-                    color:red
+                  font-weight: 600;
+                  font-size: 15px;
+                  color:red
                 }
 
                 span{

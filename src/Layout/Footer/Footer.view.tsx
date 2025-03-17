@@ -14,8 +14,8 @@ const FooterView = (props: Props) => {
           <p className={classes["page-name"]}>Контакты</p>
           <div className={classes["contacts"]}>
             <p className={classes["element"]}>[Имя] Руслан Коман</p>
-            <p className={classes["element"]}>[Франция] +33 7 53 03 35 35</p>
-            <p className={classes["element"]}>[Россия] +79 1 69 99 84 27</p>
+            <p className={classes["element"]}>🇫🇷 [Франция] +33 7 53 03 35 35</p>
+            <p className={classes["element"]}>🇷🇺 [Россия] +79 1 69 99 84 27</p>
             <p className={classes["element"]}>rustrans@gmail.com</p>
           </div>
         </div>
